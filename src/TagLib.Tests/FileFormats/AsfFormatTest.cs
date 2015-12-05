@@ -39,7 +39,7 @@ namespace TagLib.Tests.FileFormats
         [TestMethod]
         public void WriteStandardTags()
         {
-            StandardTests.WriteStandardTags (SAMPLE_FILE, TMP_FILE);
+           StandardTests.WriteStandardTags (SAMPLE_FILE, TMP_FILE);
         }
 
         [TestMethod]

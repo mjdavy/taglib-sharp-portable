@@ -399,37 +399,27 @@ namespace TagLib {
 		public AccessMode Mode {
 			get 
             {
-                if (file_stream.CanWrite)
-                {
-                    return AccessMode.Write;
-                }
-
-                if (file_stream.CanRead)
-                {
-                    return AccessMode.Read;
-                }
-
-                return AccessMode.Closed;
+                return (file_stream == null) ?
+                AccessMode.Closed : (file_stream.CanWrite) ?
+                    AccessMode.Write : AccessMode.Read;
             }
 			set 
             {
-                if (value == AccessMode.Read)
-                {
-                    file_stream = file_abstraction.ReadStream;
-                }
-                else if (value == AccessMode.Write)
-                {
-                    file_stream = file_abstraction.WriteStream;
-                }
-                else
-                {
-                    if (file_stream != null)
-                    {
-                        file_abstraction.CloseStream(file_stream);
-                        file_stream = null;
-                    }
-                }
- 
+				if (Mode == value || (Mode == AccessMode.Write
+					&& value == AccessMode.Read))
+					return;
+				
+				if (file_stream != null)
+					file_abstraction.CloseStream (file_stream);
+				
+				file_stream = null;
+				
+				if (value == AccessMode.Read)
+					file_stream = file_abstraction.ReadStream;
+				else if (value == AccessMode.Write)
+					file_stream = file_abstraction.WriteStream;
+				
+				Mode = value;
 			}
 		}
 		

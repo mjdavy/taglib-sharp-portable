@@ -380,7 +380,7 @@ namespace TagLib.Asf {
 				if (propertiesStyle != ReadStyle.None)
 					properties = header.Properties;
 			} finally {
-				Mode = AccessMode.Closed;
+				//Mode = AccessMode.Closed;
 			}
 		}
 		

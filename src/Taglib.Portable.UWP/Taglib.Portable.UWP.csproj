@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCC17957-318D-43A3-9E9B-A7785AD7C953}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taglib.Portable.UWP</RootNamespace>
+    <AssemblyName>Taglib.Portable.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taglib\Aac\AudioHeader.cs" />
+    <Compile Include="Taglib\Aac\BitStream.cs" />
+    <Compile Include="Taglib\Aac\File.cs" />
+    <Compile Include="Taglib\Ape\File.cs" />
+    <Compile Include="Taglib\Ape\Footer.cs" />
+    <Compile Include="Taglib\Ape\Item.cs" />
+    <Compile Include="Taglib\Ape\StreamHeader.cs" />
+    <Compile Include="Taglib\Ape\Tag.cs" />
+    <Compile Include="Taglib\ByteVector.cs" />
+    <Compile Include="Taglib\ByteVectorList.cs" />
+    <Compile Include="Taglib\CombinedTag.cs" />
+    <Compile Include="Taglib\CorruptFileException.cs" />
+    <Compile Include="Taglib\File.cs" />
+    <Compile Include="Taglib\FileTypes.cs" />
+    <Compile Include="Taglib\Genres.cs" />
+    <Compile Include="Taglib\ICodec.cs" />
+    <Compile Include="Taglib\Id3v1\StringHandler.cs" />
+    <Compile Include="Taglib\Id3v1\Tag.cs" />
+    <Compile Include="Taglib\Id3v2\ExtendedHeader.cs" />
+    <Compile Include="Taglib\Id3v2\Footer.cs" />
+    <Compile Include="Taglib\Id3v2\Frame.cs" />
+    <Compile Include="Taglib\Id3v2\FrameFactory.cs" />
+    <Compile Include="Taglib\Id3v2\FrameHeader.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\AttachedPictureFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\CommentsFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\GeneralEncapsulatedObjectFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\MusicCdIdentifierFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\PlayCountFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\PopularimeterFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\PrivateFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\RelativeVolumeFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\SynchronizedLyricsFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\TermsOfUseFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\TextIdentificationFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\UniqueFileIdentifierFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\UnknownFrame.cs" />
+    <Compile Include="Taglib\Id3v2\Frames\UnsynchronisedLyricsFrame.cs" />
+    <Compile Include="Taglib\Id3v2\FrameTypes.cs" />
+    <Compile Include="Taglib\Id3v2\Header.cs" />
+    <Compile Include="Taglib\Id3v2\SynchData.cs" />
+    <Compile Include="Taglib\Id3v2\Tag.cs" />
+    <Compile Include="Taglib\ListBase.cs" />
+    <Compile Include="Taglib\NonContainer\EndTag.cs" />
+    <Compile Include="Taglib\NonContainer\File.cs" />
+    <Compile Include="Taglib\NonContainer\StartTag.cs" />
+    <Compile Include="Taglib\NonContainer\Tag.cs" />
+    <Compile Include="Taglib\Picture.cs" />
+    <Compile Include="Taglib\Properties.cs" />
+    <Compile Include="Taglib\ReadOnlyByteVector.cs" />
+    <Compile Include="Taglib\StreamFileAbstraction.cs" />
+    <Compile Include="Taglib\StringList.cs" />
+    <Compile Include="Taglib\SupportedMimeType.cs" />
+    <Compile Include="Taglib\Tag.cs" />
+    <Compile Include="Taglib\UnsupportedFormatException.cs" />
+    <Content Include="Properties\Taglib.Portable.UWP.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Taglib\Aiff\" />
+    <Folder Include="Taglib\Asf\" />
+    <Folder Include="Taglib\Audible\" />
+    <Folder Include="Taglib\Flac\" />
+    <Folder Include="Taglib\Gif\" />
+    <Folder Include="Taglib\IFD\" />
+    <Folder Include="Taglib\IIM\" />
+    <Folder Include="Taglib\Image\" />
+    <Folder Include="Taglib\Jpeg\" />
+    <Folder Include="Taglib\Matroska\" />
+    <Folder Include="Taglib\Mpc\" />
+    <Folder Include="Taglib\Mpeg4\" />
+    <Folder Include="Taglib\Mpeg\" />
+    <Folder Include="Taglib\Ogg\" />
+    <Folder Include="Taglib\Png\" />
+    <Folder Include="Taglib\Riff\" />
+    <Folder Include="Taglib\Tiff\" />
+    <Folder Include="Taglib\WavPack\" />
+    <Folder Include="Taglib\Xmp\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
